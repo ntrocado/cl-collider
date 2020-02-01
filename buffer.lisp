@@ -215,7 +215,9 @@ Note that this is a synchronous function, so you should not call it in the reply
 	 (append (list "/b_gen" (bufnum buffer)
 		       (ecase wave
 			 (:cheby "cheby")
-			 (:sine1 "sine1"))
+			 (:sine1 "sine1")
+			 (:sine2 "sine2")
+			 (:sine3 "sine3"))
 		       (+ (if normalize 1 0)
 			  (if as-wavetable 2 0)
 			  (if clear-first 4 0)))
